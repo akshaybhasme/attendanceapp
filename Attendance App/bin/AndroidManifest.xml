@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akshayb.attendance2"
+    android:installLocation="preferExternal"
+    android:versionCode="10"
+    android:versionName="3.1.10" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:requiresSmallestWidthDp="320"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.akshayb.attendance2.SetupActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.ViewSubject"
+            android:label="My Subjects"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.SetSubjectActivity"
+            android:label="New Subject"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.SetTTActivity"
+            android:label="New Schedule"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.ViewTT"
+            android:label="My Timetable"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.DeleteSubjectAct"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.DeleteTTAct"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.SettingsAct"
+            android:label="Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.AttendanceLogActivity"
+            android:label="My Attendance Log"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.ViewLog"
+            android:label="My Log"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="a14f58ac3361462" />
+
+        <receiver android:name="com.akshayb.attendance2.NotificationReceiver" >
+        </receiver>
+        <receiver android:name="com.akshayb.attendance2.NewDayNotificationSetupReceiver" >
+        </receiver>
+
+        <activity
+            android:name="com.akshayb.attendance2.AboutActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.SubjectDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogTheme" >
+        </activity>
+        <activity
+            android:name="com.akshayb.attendance2.FetchAppDbActivity"
+            android:label="Sync Database"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" >
+            <intent-filter>
+    			<action android:name="android.intent.action.VIEW" />
+    			<category android:name="android.intent.category.DEFAULT" />
+    			<data android:scheme="file" />
+    			<data android:host="*" />
+    			<data android:pathPattern=".*\\.attapp" />
+    			<data android:mimeType="application/attapp" />
+  			</intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

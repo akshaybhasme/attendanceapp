@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#e5e5e5" >
+
+        <ListView
+            android:id="@+id/subjectlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#e5e5e5"
+            android:dividerHeight="3dp"
+            android:headerDividersEnabled="true"
+            android:visibility="visible" >
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/tvSubEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Hey! You don&apos;t have any subject created.\nTap here to add one."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+</RelativeLayout>

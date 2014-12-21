@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <item 
+        android:id="@+id/menu_add_subject"
+        android:title="@string/add_subject"
+        android:showAsAction="always"
+        android:icon="@drawable/content_new"
+        android:orderInCategory="100" />
+    
+    <item android:id="@+id/menu_about"
+        android:title="@string/about"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:icon="@drawable/action_about2" />
+    
+    <item android:id="@+id/menu_settings"
+        android:title="@string/settings"
+        android:orderInCategory="201"
+        android:showAsAction="never"
+        android:icon="@drawable/action_settings" />
+
+</menu>

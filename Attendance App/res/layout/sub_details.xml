@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ 
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+ 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedcorners"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="10" >
+ 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp" android:gravity="center" android:weightSum="10">
+ 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attended: "
+                    android:textColor="@android:color/black" android:layout_weight="3" android:gravity="center"/>
+ 
+                <TextView
+                    android:id="@+id/tvSDAtt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@android:color/black" android:layout_weight="7"/>
+ 
+            </LinearLayout>
+             
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp" android:gravity="center" android:weightSum="10">
+ 
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:textColor="@android:color/black" android:layout_weight="3" android:gravity="center"/>
+ 
+                <TextView
+                    android:id="@+id/tvSDTot"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@android:color/black" android:layout_weight="7"/>
+ 
+            </LinearLayout>
+             
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp" android:gravity="center" android:weightSum="10">
+ 
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Percentage Attended: "
+                    android:textColor="@android:color/black" android:layout_weight="3" android:gravity="center"/>
+ 
+                <TextView
+                    android:id="@+id/tvPercAtt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@android:color/black" android:layout_weight="7"/>
+ 
+            </LinearLayout>
+             
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp" android:gravity="center" android:weightSum="10">
+ 
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance Required: "
+                    android:textColor="@android:color/black" android:layout_weight="3" android:gravity="center"/>
+ 
+                <TextView
+                    android:id="@+id/tvAttReq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@android:color/black" android:layout_weight="7"/>
+ 
+            </LinearLayout>
+ 
+        </LinearLayout>
+ 
+    </LinearLayout>
+ 
+</LinearLayout>

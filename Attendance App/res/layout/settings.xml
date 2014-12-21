@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp" android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedcorners"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Attendance Notifications"
+                android:textColor="@android:color/black"
+                android:textSize="13dp" />
+
+            <ToggleButton
+                android:id="@+id/tbService"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="75"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedcorners"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="100" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="30"
+                android:gravity="right|center_vertical"
+                android:padding="5dp"
+                android:text="Defaulters Cut-off (%):"
+                android:textColor="@android:color/black"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/etDefaulter"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="70"
+                android:background="@android:color/white"
+                android:inputType="number"
+                android:padding="5dp" android:maxLength="2">
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/bReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedcorners_selector"
+            android:padding="15dp"
+            android:text="Reset" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/bShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedcorners"
+            android:padding="15dp"
+            android:text="Share Database"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    </LinearLayout>

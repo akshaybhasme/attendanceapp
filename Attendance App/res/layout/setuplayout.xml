@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ns="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llAd1"
+        android:layout_centerInParent="true" >
+
+
+            <Button
+                android:id="@+id/ibSubjects"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/subjectselector"
+                android:gravity="bottom|center_horizontal"
+                android:text="Subjects" />
+
+            <Button
+                android:id="@+id/ibTimetable"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ibSubjects"
+                android:background="@drawable/timetableselector"
+                android:gravity="bottom|center_horizontal"
+                android:text="Timetable" />
+
+            <Button
+                android:id="@+id/ibLog"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/ibSubjects"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/logselector"
+                android:gravity="bottom|center_horizontal"
+                android:text="Log" />
+
+            <Button
+                android:id="@+id/ibSet"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/ibTimetable"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/ibLog"
+                android:background="@drawable/settingselector"
+                android:gravity="bottom|center_horizontal"
+                android:text="Settings" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llAd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="4.3"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbSetup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>
